@@ -1,49 +1,281 @@
 /* Шапка */
-.header{display:grid;grid-template-columns:1fr min-content 1fr;align-items:center;padding:92px 50px 96px}
-.header__links-list{display:flex;align-items:center;gap:32px;list-style:circle}
-.header__links-list-item_no-bullit{list-style:none}
-.header__link_active,.footer__menu-link_active{text-decoration:none}
-.header__logo{display:block;width:148px}
-.header__logo-image{display:block}
-.address{display:flex;flex-direction:column;align-items:flex-start;font-size:18px;line-height:24px;font-style:normal}
-.header__address{max-width:240px;justify-self:end}
+.header {
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+    padding: 92px 50px 96px
+}
+
+.header__links-list {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    list-style: circle
+}
+
+.header__links-list-item_no-bullit {
+    list-style: none
+}
+
+.header__link_active,
+.footer__menu-link_active {
+    text-decoration: none
+}
+
+.header__logo {
+    display: block;
+    width: 148px
+}
+
+.header__logo-image {
+    display: block
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 18px;
+    line-height: 24px;
+    font-style: normal
+}
+
+.header__address {
+    max-width: 240px;
+    justify-self: end
+}
+
 /* Обложка */
-.cover{position:relative;display:flex;flex-direction:column;justify-content:space-between;min-height:757px;padding:165px 50px 50px;color:#fff;background:#444 url("../images/cover.jpg") center/cover no-repeat}
-.overlay{position:absolute;inset:0;z-index:0;background:rgba(0,0,0,.6)}
-.cover__title,.cover__description,.card__title,.card__text{position:relative;z-index:1}
-.cover__title{font-size:100px;font-weight:700;line-height:1.15;letter-spacing:.3em;text-transform:uppercase}
-.aligned-text{display:block}
-.aligned-text_left{text-align:left}
-.aligned-text_center{text-align:center}
-.aligned-text_right{text-align:right}
-.letter-spacing-extended{letter-spacing:.6em}
-.no-letter-spacing{letter-spacing:0}
-.cover__description{display:flex;justify-content:flex-end;align-items:center;gap:78px}
-.cover__description-text{font-size:22px;line-height:28px;text-transform:uppercase;word-spacing:16px}
-.bet-button{display:inline-block;flex-shrink:0;padding:12px 32px;border:1px solid #fff;background:transparent;color:#fff;font-size:22px;line-height:26px;text-transform:uppercase;text-decoration:none}
-.bet-button:hover,.bet-button:focus-visible{background:#fff;color:#000}
+.cover {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 757px;
+    padding: 165px 50px 50px;
+    color: #fff;
+    background: #444 url("../images/cover.jpg") center/cover no-repeat
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: rgba(0, 0, 0, .6)
+}
+
+.cover__title,
+.cover__description,
+.card__title,
+.card__text {
+    position: relative;
+    z-index: 1
+}
+
+.cover__title {
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: .3em;
+    text-transform: uppercase
+}
+
+.aligned-text {
+    display: block
+}
+
+.aligned-text_left {
+    text-align: left
+}
+
+.aligned-text_center {
+    text-align: center
+}
+
+.aligned-text_right {
+    text-align: right
+}
+
+.letter-spacing-extended {
+    letter-spacing: .6em
+}
+
+.no-letter-spacing {
+    letter-spacing: 0
+}
+
+.cover__description {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 78px
+}
+
+.cover__description-text {
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    word-spacing: 16px
+}
+
+.bet-button {
+    display: inline-block;
+    flex-shrink: 0;
+    padding: 12px 32px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-decoration: none
+}
+
+.bet-button:hover,
+.bet-button:focus-visible {
+    background: #fff;
+    color: #000
+}
+
 /* Лоты */
-.lots{margin:180px 24px 0}
-.lots__heading{margin:0 0 27px 40px;font-size:40px;line-height:47px;text-transform:uppercase}
-.lots__card-list{display:flex;flex-wrap:wrap;gap:25px;list-style:none}
-.lots__card-list-item{width:334px;min-height:596px}
-.card-link{display:block;height:100%;color:#fff;text-decoration:none}
-.card{position:relative;display:flex;flex-direction:column;justify-content:space-between;height:100%;padding:48px 40px;background-position:center;background-size:cover;background-repeat:no-repeat}
-.card_type_film{background-image:url("../images/card-lot-01.jpg")}
-.card_type_book{background-image:url("../images/card-lot-02.jpg")}
-.card_type_picture{background-image:url("../images/card-lot-03.jpg")}
-.card__title{font-size:22px;line-height:26px;text-decoration:underline;text-transform:uppercase}
-.card__text{font-size:20px;line-height:24px}
-.lots__look-more-link{display:inline-block;margin:30px 0 0 40px;font-size:20px}
+.lots {
+    margin: 180px 24px 0
+}
+
+.lots__heading {
+    margin: 0 0 27px 40px;
+    font-size: 40px;
+    line-height: 47px;
+    text-transform: uppercase
+}
+
+.lots__card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    list-style: none
+}
+
+.lots__card-list-item {
+    width: 334px;
+    min-height: 596px
+}
+
+.card-link {
+    display: block;
+    height: 100%;
+    color: #fff;
+    text-decoration: none
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 48px 40px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+.card_type_film {
+    background-image: url("../images/card-lot-01.jpg")
+}
+
+.card_type_book {
+    background-image: url("../images/card-lot-02.jpg")
+}
+
+.card_type_picture {
+    background-image: url("../images/card-lot-03.jpg")
+}
+
+.card__title {
+    font-size: 22px;
+    line-height: 26px;
+    text-decoration: underline;
+    text-transform: uppercase
+}
+
+.card__text {
+    font-size: 20px;
+    line-height: 24px
+}
+
+.lots__look-more-link {
+    display: inline-block;
+    margin: 30px 0 0 40px;
+    font-size: 20px
+}
+
 /* Об аукционе */
-.about{display:grid;grid-template-columns:334px 1fr;gap:25px;margin:181px 24px 0}
-.about__logo{display:flex;align-items:center;justify-content:center;width:240px;height:240px;margin:0 auto;border-radius:50%;background:#000}
-.about__logo-image{width:148px}
-.about__title{margin:100px 0;font-size:40px;line-height:47px;text-transform:uppercase}
-.about__text{display:flex;flex-direction:column;gap:24px;font-size:20px;line-height:24px}
+.about {
+    display: grid;
+    grid-template-columns: 334px 1fr;
+    gap: 25px;
+    margin: 181px 24px 0
+}
+
+.about__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    height: 240px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: #000
+}
+
+.about__logo-image {
+    width: 148px
+}
+
+.about__title {
+    margin: 100px 0;
+    font-size: 40px;
+    line-height: 47px;
+    text-transform: uppercase
+}
+
+.about__text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-size: 20px;
+    line-height: 24px
+}
+
 /* Подвал */
-.footer{display:grid;grid-template-columns:1fr 1fr 1fr;align-items:start;margin-top:180px;padding:0 50px 82px}
-.footer__menu-list{list-style:none;text-align:center}
-.footer__social-list{display:flex;justify-content:flex-end;gap:48px;list-style:none}
-.footer__social-icon{display:block;width:48px;height:48px}
-a:focus-visible{outline:3px solid #2878ff;outline-offset:4px}
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+    margin-top: 180px;
+    padding: 0 50px 82px
+}
+
+.footer__menu-list {
+    list-style: none;
+    text-align: center
+}
+
+.footer__social-list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 48px;
+    list-style: none
+}
+
+.footer__social-icon {
+    display: block;
+    width: 48px;
+    height: 48px
+}
+
+a:focus-visible {
+    outline: 3px solid #2878ff;
+    outline-offset: 4px
+}
