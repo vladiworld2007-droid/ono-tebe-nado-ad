@@ -30,6 +30,7 @@
 
 .header__logo-image {
     display: block;
+    width: 100%;
 }
 
 .address {
@@ -91,10 +92,12 @@
 
 .aligned-text_center {
     text-align: center;
+    margin-left: 30px;
 }
 
 .aligned-text_right {
     text-align: right;
+    margin-left: 30px;
 }
 
 .letter-spacing-extended {
@@ -280,3 +283,5 @@ a:focus-visible {
     outline: 3px solid #2878ff;
     outline-offset: 4px;
 }
+
+
